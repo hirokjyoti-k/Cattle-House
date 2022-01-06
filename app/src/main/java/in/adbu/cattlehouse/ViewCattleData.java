@@ -237,7 +237,7 @@ public class ViewCattleData extends AppCompatActivity implements OnMapReadyCallb
     }
 
     public void deleteData(View view) {
-        //fix app crash when data removed..
+        //fix app crash when data removed.
         if(Position>1)
             Position = Position-1;
 
