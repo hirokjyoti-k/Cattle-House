@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "246861362550",
+    "project_id": "cattle-house",
+    "storage_bucket": "cattle-house.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246861362550:android:05bec8a18c1c6da1eeb657",
+        "android_client_info": {
+          "package_name": "in.adbu.cattlehouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246861362550-bcgm6fc4cb6s7qq1cqo6oeiltgc3jg1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxx0T599zZk2Du5Gj1a8glO98a46eBQdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246861362550-bcgm6fc4cb6s7qq1cqo6oeiltgc3jg1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

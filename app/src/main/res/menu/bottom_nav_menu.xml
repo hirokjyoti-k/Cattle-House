@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home">
+    </item>
+
+    <item
+        android:id="@+id/statistics"
+        android:icon="@drawable/ic_baseline_view_compact_24"
+        android:title="@string/statistics">
+    </item>
+
+    <item
+        android:id="@+id/mapView"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="@string/map">
+    </item>
+
+<!--    <item-->
+<!--        android:id="@+id/add"-->
+<!--        android:icon="@drawable/ic_baseline_add_circle_outline_24"-->
+<!--        android:title="@string/add">-->
+<!--    </item>-->
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_user_24"
+        android:title="@string/profile">
+    </item>
+
+</menu>

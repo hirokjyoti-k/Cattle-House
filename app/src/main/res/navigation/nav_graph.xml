@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="in.adbu.cattlehouse.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_add"
+            app:destination="@id/add" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add"
+        android:name="in.adbu.cattlehouse.fragments.EditData"
+        android:label="fragment_add_cattle"
+        tools:layout="@layout/fragment_edit_data" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="in.adbu.cattlehouse.fragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/mapView"
+        android:name="in.adbu.cattlehouse.fragments.MapView"
+        android:label="fragment_map_view"
+        tools:layout="@layout/fragment_map_view" />
+
+    <fragment
+        android:id="@+id/statistics"
+        android:name="in.adbu.cattlehouse.fragments.Statistics"
+        android:label="fragment_detailed__data"
+        tools:layout="@layout/fragment_statistics" />
+
+</navigation>
