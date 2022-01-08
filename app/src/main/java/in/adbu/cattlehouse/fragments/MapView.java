@@ -1,9 +1,17 @@
 package in.adbu.cattlehouse.fragments;
 
+import static android.content.Context.LOCATION_SERVICE;
+
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -51,15 +59,20 @@ public class MapView extends Fragment implements OnMapReadyCallback {
 
     }
 
+    @SuppressLint("MissingPermission")
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
+        mMap = googleMap;
+        mMap.setMyLocationEnabled(true);
+        LocationManager locationManager = (LocationManager) getContext().getSystemService(LOCATION_SERVICE);
+        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 12.0f));
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("cattles");
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                mMap = googleMap;
+
                 mMap.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     CattleData snapshotData = snapshot.getValue(CattleData.class);
