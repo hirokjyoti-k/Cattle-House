@@ -66,7 +66,8 @@ public class MapView extends Fragment implements OnMapReadyCallback {
         mMap.setMyLocationEnabled(true);
         LocationManager locationManager = (LocationManager) getContext().getSystemService(LOCATION_SERVICE);
         Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 12.0f));
+        if(location!=null)
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 12.0f));
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("cattles");
         databaseReference.addValueEventListener(new ValueEventListener() {
