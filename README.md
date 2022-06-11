@@ -6,13 +6,13 @@ The IoT based CMTS is a framework that uses various sensors mounted together to 
 
 ## The major components of the system
 
-- NodeMCU Module
-- Lora Module
-- GPS Module
-- Temperature sensor
-- Heart Rate 
-- Power Supply
-- Power Booster MT3608:
+- NodeMCU ESP8266
+- LoRa Module SX1278 433MHZ
+- Neo-6M GPS Module
+- Temperature Sensor LM35
+- Pulse Sensor RC-A-4015 
+- Power Supply 5V Battery
+- Power Booster MT3608
 
 
 ## Circuit diagram foe Transmitter Node
