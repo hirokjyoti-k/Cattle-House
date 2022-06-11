@@ -2,7 +2,7 @@
 
 The IoT based CMTS is a framework that uses various sensors mounted together to monitor the body temperature and heartbeat of the cattle and stored the data into cloud database from which information can be accessed via an android application by the cattle owner.
 
-![](https://github.com/hirokjyoti-k/Cattle-Tracker/blob/master/images/receiver.jpg)
+![](https://github.com/hirokjyoti-k/Cattle-Tracker/blob/master/images/system.png)
 
 ## The major components of the system
 
