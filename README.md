@@ -15,12 +15,12 @@ The IoT based CMTS is a framework that uses various sensors mounted together to 
 - Power Booster MT3608:
 
 
-## Circuit diagram of Transmitter
+## Circuit diagram foe Transmitter Node
 ![](https://github.com/hirokjyoti-k/Cattle-Tracker/blob/master/images/transmitter.jpg) 
 
 
 
-## Circuit diagram of Transmitter
+## Circuit diagram of Receiver Node
 ![](https://github.com/hirokjyoti-k/Cattle-Tracker/blob/master/images/receiver.jpg)
 
 
