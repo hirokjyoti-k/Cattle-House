@@ -16,7 +16,7 @@ The IoT based CMTS is a framework that uses various sensors mounted together to 
 
 
 ## Circuit diagram for Transmitter Node
-![](https://github.com/hirokjyoti-k/Cattle-Tracker/blob/master/images/transmitter.jpg)
+![](https://github.com/hirokjyoti-k/Cattle-Tracker/blob/master/images/transmitter.jpg | width=100)
 
 
 
